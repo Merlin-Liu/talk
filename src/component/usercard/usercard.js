@@ -25,9 +25,9 @@ export default class UserCard extends React.Component {
                           extra={item.title}
                       ></Card.Header>
                       <Card.Body>
-                        {item.type === 'boss' ? <div>公司：{item.company}</div> : null}
-                        {item.desc.split('\n').map((value) => (
-                          <div key={value}>{value}</div>
+                        {item.type === 'boss' ? <div style={{marginBottom: 5}}>公司：{item.company}</div> : null}
+                        {item.desc.split('\n').map((value, index) => (
+                          <div style={{marginBottom: 5}} className={index !== 0 ? 'indent' : ''} key={value}>{index === 0 ? '描述：' : ''}{value}</div>
                         ))}
                         {item.type === 'boss' ? <div>薪资：{item.money}</div> : null}
                       </Card.Body>

@@ -1,6 +1,10 @@
 body {
     height: 100%;
     overflow: hidden;
+    color: #888;
+}
+.indent {
+    text-indent: 3em;
 }
 .error-msg {
     color: #ff5500;
@@ -27,6 +31,19 @@ body {
 .page-content {
     padding: 45px 5px;
 }
+.am-button-primary {
+    background-color: #64b28b;
+    border: 1px solid #64b28b;
+}
+.am-list-item .am-input-label {
+    color: #888;
+}
+.am-navbar {
+    background-color: #64b28b;
+}
+.am-list-header {
+    padding: 55px 15px 9px 15px;
+}
 
 #chat-page {
     overflow-y: scroll;
@@ -46,11 +63,22 @@ body {
 #chat-page .am-grid-text{
     margin-top: 0;
 }
+.am-modal-button-group-h .am-modal-button {
+    color: #64b28b;
+}
+.am-radio.am-radio-checked .am-radio-inner:after {
+    display: block;
+    border-color: #64b28b;
+}
 .stick-footer{
     z-index:10;
     position: fixed;
     bottom: 0;
     width:100%;
+}
+.am-tab-bar-bar .am-tab-bar-tab-image {
+    width: 28px;
+    height: 28px;
 }
 
 
@@ -85,7 +113,8 @@ body {
     border-radius: 4px;
 }
 .chat-box.myself .text {
-    background-color: #518de5;
+    color: #fff;
+    background-color: #64b28b;
 }
 .chat-box .text:before {
     content: " ";
@@ -99,5 +128,5 @@ body {
     right: inherit;
     left: 100%;
     border-right-color: transparent;
-    border-left-color: #518de5;
+    border-left-color: #64b28b;
 }

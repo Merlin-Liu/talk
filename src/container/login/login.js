@@ -35,12 +35,12 @@ export default class Login extends React.Component {
             <List>
               <InputItem
                   onChange={value => this.props.handleChange('user', value)}
-              >用户：</InputItem>
+              >用户</InputItem>
               <WhiteSpace/>
               <InputItem
                   type="password"
                   onChange={value => this.props.handleChange('pwd', value)}
-              >密码：</InputItem>
+              >密码</InputItem>
             </List>
             <WhiteSpace/>
             <Button onClick={this.handleLogin} type="primary">登陆</Button>

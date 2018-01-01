@@ -17,7 +17,7 @@ export default class NavLinkBar extends React.Component {
     const { pathname } = this.props.location
 
     return (
-          <TabBar>
+          <TabBar tintColor="#64b28b">
             {navList.map(val => (
                 <TabBar.Item
                     badge={val.path === '/msg' ? this.props.unRead : ''}

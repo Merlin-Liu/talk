@@ -61,7 +61,7 @@ export default class DashBoard extends React.Component {
           <NavBar className="fixd-header">
             {targetRoute.title}
           </NavBar>
-          <div style={{marginTop: 45}}>
+          <div style={{marginTop: 55}}>
             <Switch>
               {navList.map(item => (
                   <Route key={item.path} path={item.path} component={item.component}/>
