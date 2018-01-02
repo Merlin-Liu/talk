@@ -45,4 +45,52 @@
 ## 技术栈
 
 * 使用React官方提供的构建工具create-react-app构建项目
-* 
+* React16
+* Express
+* Socket.IO做前后端实时通讯
+* MongoDB的Node环境下的对象模型工具mongoose
+* 使用React-Router4做路由跳转
+* 使用Redux状态管理，React-Redux连接React和Redux
+* 使用React16新抽取的prop-types指定context对象、props类型
+* cookie-parser操作cookie
+* axios进行数据传递
+* UI使用ant-design组件库
+
+## 项目结构
+<pre>
+.
+├── README.md           
+├── build                 // 构建服务和webpack配置,转发聊天机器人以及ajax获取用户数据相关内容
+├── config                // 项目不同环境的配置
+├── dist                  // 项目build目录
+├── index.html            // 项目入口文件
+├── package.json          // 项目配置文件
+├── mockdata.json         // 项目模拟数据
+├── src
+│   ├── common            // 公用的css样式
+│   ├── components        // 各种组件
+│   ├── router            // 存放路由的文件夹
+│   ├── vuex	            // 存放Vuex的相关
+│   ├── muse-ui.config.js // muse-ui单组件加载配置
+│   ├── App.Vue           // 模板文件入口
+│   └── main.js           // Webpack 预编译入口
+├── static                // css js 和图片资源
+│   
+
+</pre>
+
+## 总结
+
+主要学会对React-Router4的使用以及了解了React、React-Router4和之前版本的不同，更加深入的理解Redux和React-Router的原理，对React组件的优化也加深了了解，学会了socket.IO的使用
+
+## 运行
+
+```
+# clone 
+git colne https://github.com/Merlin-Liu/talk.git
+cd talk
+# dev
+npm start
+# build
+npm build
+```
