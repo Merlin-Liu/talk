@@ -59,24 +59,51 @@
 ## 项目结构
 <pre>
 .
-├── README.md           
-├── build                 // 构建服务和webpack配置,转发聊天机器人以及ajax获取用户数据相关内容
-├── config                // 项目不同环境的配置
-├── dist                  // 项目build目录
-├── index.html            // 项目入口文件
-├── package.json          // 项目配置文件
-├── mockdata.json         // 项目模拟数据
+├── README.md
+├── config
+├── package.json
+├── public // 公共资源
+├── scripts 
+│   ├── build.js
+│   ├── start.js
+│   └── test.js
+├── server
+│   ├── model.js // 数据模型
+│   ├── server.js // 启动server、连接mongodb
+│   └── user.js // 路由
 ├── src
-│   ├── common            // 公用的css样式
-│   ├── components        // 各种组件
-│   ├── router            // 存放路由的文件夹
-│   ├── vuex	            // 存放Vuex的相关
-│   ├── muse-ui.config.js // muse-ui单组件加载配置
-│   ├── App.Vue           // 模板文件入口
-│   └── main.js           // Webpack 预编译入口
-├── static                // css js 和图片资源
-│   
-
+│   ├── component // 组件库
+│   │   ├── HOCdemo.js // 高阶组件demo
+│   │   ├── authRoute // 路由认证
+│   │   ├── avatar-selector // 头像原则
+│   │   ├── boss // 招聘者
+│   │   ├── chat // 聊天界面
+│   │   ├── chatbox // 聊天气泡
+│   │   ├── dashboard // 主界面
+│   │   ├── genius // 求职者
+│   │   ├── imgs 
+│   │   ├── logo // logo组件
+│   │   ├── msglist // 消息列表
+│   │   ├── myself // 个人信息
+│   │   ├── navlinkbar // 导航
+│   │   ├── usercard // 求职者或者招聘者信息列表
+│   │   └── wrapChangeHandle // 高阶组件
+│   ├── config.js
+│   ├── container
+│   │   ├── bossinfo // 招聘者信息完善
+│   │   ├── geniusinfo // 求职者信息完善
+│   │   ├── login // 登陆
+│   │   └── register // 注册
+│   ├── index.css
+│   ├── index.js
+│   ├── reducer.js // reducer
+│   ├── redux
+│   │   ├── chat.redux.js // chat数据
+│   │   ├── chatuser.redux.js chatuser数据
+│   │   └── user.redux.js // user数据
+│   └── util.js // 封装了常用工具
+└── yarn.lock
+28 directories, 78 files
 </pre>
 
 ## 总结
