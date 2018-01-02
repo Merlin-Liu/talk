@@ -114,10 +114,16 @@
 
 ```
 # clone 
+
 git colne https://github.com/Merlin-Liu/talk.git
+
 cd talk
+
 # dev
+
 npm start
+
 # build
+
 npm build
 ```
